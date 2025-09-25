@@ -1,0 +1,37 @@
+:root{--bg:#f6f8fb;--card:#fff;--muted:#6b7280;--accent:#4f46e5}
+*{box-sizing:border-box}
+body{font-family:Segoe UI, Roboto, Arial, sans-serif;background:var(--bg);margin:0;color:#0f172a}
+.app{display:flex;min-height:100vh}
+.sidebar{width:220px;background:linear-gradient(180deg,#0f172a,#0b1220);color:#fff;padding:20px;display:flex;flex-direction:column}
+.brand{font-weight:700;margin-bottom:20px}
+.sidebar nav button{display:block;background:none;border:none;color:rgba(255,255,255,0.9);padding:8px 0;text-align:left;width:100%}
+.sidebar nav button.active{color:var(--accent)}
+.sidebar-footer{margin-top:auto;font-size:12px;opacity:0.8}
+.main{flex:1;display:flex;flex-direction:column}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;background:transparent}
+.topbar h1{margin:0;font-size:18px}
+.topbar-right{display:flex;gap:12px;align-items:center}
+.topbar-right input{padding:8px;border-radius:8px;border:1px solid #e6e9ef}
+.avatar{width:36px;height:36px;border-radius:50%}
+.content{padding:24px;display:grid;grid-template-columns:1fr 320px;gap:20px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.card{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 1px 3px rgba(15,23,42,0.06)}
+.card .big{font-size:28px;margin:6px 0}
+.muted{color:var(--muted);font-size:13px}
+.projects{grid-column:1/2}
+.project-list{display:grid;gap:12px}
+.project{background:var(--card);padding:14px;border-radius:8px}
+.recent{display:grid;grid-template-columns:1fr 320px;gap:20px}
+.recent-tasks ul{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.recent-tasks li{background:var(--card);padding:12px;border-radius:8px}
+.sidebar-widgets .widget{background:var(--card);padding:12px;border-radius:8px;margin-bottom:12px}
+.member{display:flex;gap:10px;align-items:center;padding:6px 0}
+.member img{width:44px;height:44px;border-radius:8px}
+.site-footer{padding:16px 24px;color:var(--muted);font-size:13px}
+
+@media (max-width:900px){
+  .content{grid-template-columns:1fr}
+  .recent{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .sidebar{display:none}
+}
