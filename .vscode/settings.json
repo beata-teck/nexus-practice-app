@@ -1,0 +1,9 @@
+{
+  "editor.fontSize": 14,
+  "editor.lineHeight": 26,
+  "editor.letterSpacing": 0.5,
+  "editor.wordWrap": "on",
+  "editor.renderWhitespace": "all",
+  "editor.cursorBlinking": "smooth",
+  "files.trimTrailingWhitespace": true
+}
