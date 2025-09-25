@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task Management Dashboard — Clone</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">Task Dashboard</div>
+      <nav>
+        <a class="active">Overview</a>
+        <a>Projects</a>
+        <a>Tasks</a>
+        <a>Team</a>
+        <a>Settings</a>
+      </nav>
+      <div class="sidebar-footer">© 2024 Task Management Dashboard</div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <button id="toggleSidebar" aria-label="Toggle sidebar">☰</button>
+        <h1>Task Management Dashboard</h1>
+        <div class="topbar-right">
+          <input placeholder="Search" aria-label="Search" />
+          <img class="avatar" src="https://react-components-project-seven.vercel.app/professional-headshot.png" alt="John Doe" />
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="stats">
+          <div class="card">
+            <h3>TOTAL TASKS</h3>
+            <p class="big">4</p>
+            <p class="muted">All tasks in the system</p>
+          </div>
+          <div class="card">
+            <h3>ACTIVE PROJECTS</h3>
+            <p class="big">3</p>
+            <p class="muted">Currently running projects</p>
+          </div>
+          <div class="card">
+            <h3>TEAM MEMBERS</h3>
+            <p class="big">4</p>
+            <p class="muted">People in your team</p>
+          </div>
+          <div class="card">
+            <h3>NOTIFICATIONS</h3>
+            <p class="big">3</p>
+            <p class="muted">Recent updates</p>
+          </div>
+        </section>
+
+        <section class="projects">
+          <h2>Projects</h2>
+          <div class="project-list">
+            <article class="project">
+              <h3>E-commerce Platform</h3>
+              <p>Building a modern online shopping experience</p>
+              <div class="meta">8 members • 2/15/2024</div>
+            </article>
+            <article class="project">
+              <h3>Mobile App</h3>
+              <p>Cross-platform mobile application development</p>
+              <div class="meta">5 members • 3/1/2024</div>
+            </article>
+            <article class="project">
+              <h3>Analytics Dashboard</h3>
+              <p>Real-time data visualization and reporting</p>
+              <div class="meta">3 members • 1/30/2024</div>
+            </article>
+          </div>
+        </section>
+
+        <section class="recent">
+          <div class="recent-tasks">
+            <h2>Recent Tasks</h2>
+            <ul>
+              <li>
+                <strong>Design Homepage</strong>
+                <p>Create wireframes and mockups for the new homepage layout</p>
+                <div class="task-meta">Sarah Chen • 1/15/2024</div>
+              </li>
+              <li>
+                <strong>Setup Database</strong>
+                <p>Configure PostgreSQL database and create initial schemas</p>
+                <div class="task-meta">Mike Johnson • 1/20/2024</div>
+              </li>
+              <li>
+                <strong>Write Documentation</strong>
+                <p>Document API endpoints and component usage</p>
+                <div class="task-meta">Alex Rivera • 1/10/2024</div>
+              </li>
+              <li>
+                <strong>Implement Authentication</strong>
+                <p>Add user login and registration functionality</p>
+                <div class="task-meta">Emma Davis • 1/25/2024</div>
+              </li>
+            </ul>
+          </div>
+
+          <aside class="sidebar-widgets">
+            <section class="widget team">
+              <h3>Team Members</h3>
+              <div class="member">
+                <img src="https://react-components-project-seven.vercel.app/professional-woman-designer.png" alt="Sarah Chen" />
+                <div>
+                  <strong>Sarah Chen</strong>
+                  <div class="muted">UI/UX Designer</div>
+                </div>
+              </div>
+              <div class="member">
+                <img src="https://react-components-project-seven.vercel.app/professional-man-developer.png" alt="Mike Johnson" />
+                <div>
+                  <strong>Mike Johnson</strong>
+                  <div class="muted">Backend Developer</div>
+                </div>
+              </div>
+              <div class="member">
+                <img src="https://react-components-project-seven.vercel.app/professional-person-writer.jpg" alt="Alex Rivera" />
+                <div>
+                  <strong>Alex Rivera</strong>
+                  <div class="muted">Technical Writer</div>
+                </div>
+              </div>
+              <div class="member">
+                <img src="https://react-components-project-seven.vercel.app/professional-woman-developer.png" alt="Emma Davis" />
+                <div>
+                  <strong>Emma Davis</strong>
+                  <div class="muted">Frontend Developer</div>
+                </div>
+              </div>
+            </section>
+
+            <section class="widget notifications">
+              <h3>Notifications</h3>
+              <ul>
+                <li><strong>Task Completed</strong><div class="muted">Documentation finished by Alex Rivera • 2 hours ago</div></li>
+                <li><strong>Deadline Approaching</strong><div class="muted">Homepage design due in 3 days • 4 hours ago</div></li>
+                <li><strong>New Team Member</strong><div class="muted">Emma Davis joined the project • 1 day ago</div></li>
+              </ul>
+            </section>
+          </aside>
+        </section>
+
+      </main>
+      <footer class="site-footer">Made for learning — clone example</footer>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
